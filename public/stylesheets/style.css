@@ -5,4 +5,41 @@ body {
 
 a {
   color: #00B7FF;
+  position: static;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+th, td{
+  width: 150px;
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+th {
+  font-size: 20px;
+}
+
+td {
+  text-transform: capitalize;
+  background-color: ghostwhite;
+}
+
+.red {
+  background-color: #fc7b79;
+}
+
+.green {
+  background-color: lawngreen;
+}
+.add {
+  color: black;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  text-decoration: none;
 }

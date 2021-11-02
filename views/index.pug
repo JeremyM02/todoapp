@@ -3,7 +3,7 @@ extends layout
 block content
   h1 To Do Items
   table
-    thread
+    thead
       tr
         th Description
         th Completed?
@@ -11,7 +11,10 @@ block content
     tbody
       each item in toDoItems
         tr
-          td= item.description
+          if item.completed
+            td.green= item.description
+          else
+            td.red= item.description
           td= item.completed
           td
             div.row
@@ -19,7 +22,9 @@ block content
                 a(href=`incomplete/${item.id}`) Mark Incomplete
               else
                 a(href=`complete/${item.id}`) Mark Complete
+              br
               a(href=`delete/${item.id}`) Delete Item
+              br
               a(href=`edit/${item.id}`) Edit Item
 
-  a(href="/add") Add Item
+  a.add(href="/add") Add Item
