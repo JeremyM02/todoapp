@@ -6,6 +6,24 @@ body {
 a {
   color: #00B7FF;
   position: static;
+  margin-top: 5px;
+}
+a:hover {
+  color: black;
+  transition: color 0.2s ease-out;
+}
+
+.incomplete, .complete {
+  font-size: 20px;
+  text-decoration: none;
+}
+.incomplete:hover {
+  color: red;
+  transition: color 0.5s ease-out;
+}
+.complete:hover {
+  color: green;
+  transition: color 0.5s ease-out;
 }
 
 table {
@@ -30,10 +48,12 @@ td {
 
 .red {
   background-color: #fc7b79;
+  font-weight: bold;
 }
 
 .green {
   background-color: lawngreen;
+  font-weight: bold;
 }
 .add {
   color: black;
